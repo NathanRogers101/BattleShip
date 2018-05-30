@@ -35,7 +35,7 @@ public class connect4
 
 
             if (board[numInput-1][numInput2-1] == "B" || board[numInput-1][numInput2-1] == "R"){
-                System.out.println("test");
+                System.out.println("token overwriten");
                 maincode();
             }
 
@@ -71,14 +71,16 @@ public class connect4
     }
 
 
+
     static void DropToken(int num1, int num2){
         boolean empt = true;
         while(empt == true){
             if (board[num1-1][num2-2] == "O"){
-
+                System.out.println("This Space is empty");
             }else{
-
+                System.out.println("this space has a token");
             }
+            empt = false;
         }
 
     }
